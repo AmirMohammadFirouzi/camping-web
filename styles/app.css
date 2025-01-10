@@ -19,6 +19,7 @@ body {
     font-size: 1.6rem;
     line-height: 1.6;
     font-family: var(--font-roboto);
+    background-color: var(--color-bg);
 }
 
 a {
@@ -395,3 +396,41 @@ a {
 .header-content__link {
     background-color: var(--color-orange);
 }
+
+/* 
+
+-- Main --
+
+*/
+
+.main {}
+
+/* 
+
+-- Services --
+
+*/
+
+.services {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.services__item {
+    display: block;
+    width: 37rem;
+    height: 31rem;
+    text-align: center;
+    margin: auto 0;
+    border-radius: var(--border-r);
+    background-color: var(--color-white);
+}
+
+.services__item-img {}
+
+.services__item-description {}
+
+.services__item-title {}
+
+.services__item-text {}
