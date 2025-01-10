@@ -1,0 +1,17 @@
+:root {
+    --font-roboto: 'Roboto', sans-serif;
+    --font-roboto-medium: 'Roboto Medium', sans-serif;
+    --font-archivo-black: 'Archivo Black', sans-serif;
+
+    --bg-cover: linear-gradient(rgba(59, 55, 53, 0.5), rgba(59, 55, 53, 0.5));
+    --color-white: #fff;
+    --color-black: #3B3735;
+    --color-gray: #D2D2D2;
+    --color-orange: #E76F51;
+    --color-bg: #FAF4F2;
+
+    --border-r: 2rem;
+
+    --transition-animated-all: all 250ms ease-in-out;
+    --transition-animated-color: color 100ms ease-in;
+}
