@@ -31,7 +31,7 @@ a {
 
 */
 
-.btn-comp {    
+.btn-comp {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -195,8 +195,12 @@ a {
 .nav-menu__wrapper {}
 
 .app-logo--center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto;
     margin-bottom: 2rem;
+    direction: ltr;
 }
 
 .nav-menu--open {
@@ -211,6 +215,8 @@ a {
 
 .mobile-menu {
     margin-bottom: 4rem;
+    direction: ltr;
+
 }
 
 .mobile-menu__item {
@@ -224,13 +230,41 @@ a {
     width: 100%;
     padding: 1rem 1.5rem;
     border-radius: 1rem;
+    position: relative;
+    transition: var(--transition-animated-all);
 }
+
+.mobile-menu__link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto auto auto 1rem;
+    border-radius: var(--border-r);
+    width: 0;
+    height: 0.3rem;
+    transition: var(--transition-animated-all);
+}
+
+.mobile-menu__link:focus::before {
+    background-color: var(--color-white);
+}
+
+.mobile-menu__link:hover {
+    padding-left: 3rem;
+}
+
+.mobile-menu__link:hover::before {
+    width: 1.6rem;
+    background-color: var(--color-orange);
+}
+
 
 .mobile-menu__link--active {}
 
 .mobile-menu__link--active:focus {
-    background-color: var(--color-orange);
-    color: var(--color-white);
+    color: var(--color-orange);
     font-weight: bold;
 }
 
@@ -248,6 +282,13 @@ a {
     background-color: var(--color-white);
     padding: 1rem 1.5rem;
     border-radius: 1rem;
+    transition: var(--transition-animated-all);
+}
+
+.nav-menu-links__link:hover {
+    color: var(--color-white);
+    background-color: var(--color-orange);
+    transition: var(--transition-animated-all);
 }
 
 .nav-menu-links__link--orange {
