@@ -159,9 +159,9 @@ a {
 }
 
 .nav-links__link--border {
-    border: 1px solid var(--color-white);
     padding: 1rem 3rem;
     border-radius: 25rem;
+    border: 1px solid var(--color-white);
     transition: var(--transition-animated-color);
 }
 
@@ -394,6 +394,8 @@ a {
 }
 
 .header-content__link {
+    font-size: 1.8rem;
+    font-family: var(--font-roboto-medium);
     background-color: var(--color-orange);
 }
 
@@ -449,4 +451,143 @@ a {
 
 .services__item-description {
     max-width: 29rem;
+}
+
+/* 
+
+-- Destination --
+
+*/
+
+.destination {
+    text-align: center;
+    padding: 10rem 0;
+}
+
+.destination__logo {
+    width: 8rem;
+    height: 8rem;
+}
+
+.destination__title {
+    max-width: 36rem;
+    font-size: 3rem;
+    margin: 3rem auto;
+    font-family: var(--font-archivo-black);
+}
+
+.destination__places {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.destination__link {
+    margin-top: 6rem;
+    background-color: transparent;
+    border: 1px solid var(--color-orange);
+    color: var(--color-orange);
+    transition: var(--transition-animated-color);
+}
+
+.destination__link:hover {
+    background-color: var(--color-orange);
+    color: var(--color-bg);
+}
+
+/* 
+
+-- Destination Places --
+
+*/
+
+.place {
+    width: 32rem;
+    height: 45rem;
+    padding: 2rem;
+    flex-grow: 1;
+    overflow: hidden;
+    color: var(--color-black);
+    border-radius: var(--border-r);
+    background-color: var(--color-white);
+}
+
+.place__banner {
+    position: relative;
+    overflow: hidden;
+    height: 18rem;
+    border-radius: var(--border-r);
+}
+
+.place__banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.place__like {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1.4rem;
+    background-color: var(--color-white);
+}
+
+.place__like-icon {
+    cursor: pointer;
+    fill: var(--color-white);
+    stroke: var(--color-orange);
+    transition: var(--transition-animated-all);
+}
+
+.place__like-icon--fill {
+    fill: var(--color-orange);
+    stroke: var(--color-white);
+}
+
+.place__price {
+    position: absolute;
+    bottom: -.8rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    width: 15rem;
+    border-radius: 1.4rem 1.4rem 0 0;
+    z-index: 9;
+    background-color: var(--color-white);
+    color: var(--color-orange);
+    font-family: var(--font-roboto-medium);
+}
+
+.place__price-text {}
+
+.place__title {
+    margin-top: 3rem;
+    font-size: 1.8rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-family: var(--font-archivo-black);
+}
+
+.place__caption {
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+}
+
+.place__link {
+    background-color: rgba(141, 141, 141, .1);
+    color: var(--color-silver);
+    transition: var(--transition-animated-color);
+}
+
+.place__link:hover {
+    color: var(--color-white);
+    background-color: var(--color-silver);
 }
