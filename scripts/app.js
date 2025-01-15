@@ -14,9 +14,9 @@ const toggleClassFunc = () => {
 }
 
 const likeBtnFunc = () => {
-    likeIcon.forEach(e => {
-        e.addEventListener('click', () => {
-            e.classList.toggle("place__like-icon--fill");
+    likeIcon.forEach(like => {
+        like.addEventListener('click', () => {
+            like.classList.toggle("place__like-icon--fill");
         })
     });
 }
