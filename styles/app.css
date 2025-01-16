@@ -672,3 +672,37 @@ a {
 .newsletter__img {
     width: 100%;
 }
+
+/* 
+
+-- Footer --
+
+*/
+
+.footer {}
+
+.footer__wrapper {}
+
+.footer__wrapper-left {}
+
+.footer-content {}
+
+.footer__title {}
+
+.footer-content__description {}
+
+.footer-app {}
+
+.footer-app__link {}
+
+.footer-app__img {}
+
+.footer__wrapper-right {}
+
+.footer-list {}
+
+.footer-pages {}
+
+.footer-page__item {}
+
+.footer-page__link {}
