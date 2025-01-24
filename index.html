@@ -12,7 +12,7 @@
 
 <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header" id="header">
         <!-- Container -->
         <div class="container">
             <!-- Navbar -->
@@ -31,7 +31,7 @@
                             <a href="#" class="menu__link menu__link--active">Home</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link">Destination</a>
+                            <a href="#destination__link" class="menu__link">Destination</a>
                         </li>
                         <li class="menu__item">
                             <a href="#" class="menu__link">Near me</a>
@@ -46,10 +46,10 @@
                             <a href="#" class="menu__link">Gallery</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link">About</a>
+                            <a href="#footer__link" class="menu__link">About</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link">Contact us</a>
+                            <a href="#newsletter__link" class="menu__link">Contact us</a>
                         </li>
                     </ul>
                     <!-- End Menu -->
@@ -79,7 +79,7 @@
                                 <a href="#" class="mobile-menu__link mobile-menu__link--active">Home</a>
                             </li>
                             <li class="mobile-menu__item">
-                                <a href="#" class="mobile-menu__link mobile-menu__link--active">Destination</a>
+                                <a href="#" class="mobile-menu__link mobile-menu__link--active" >Destination</a>
                             </li>
                             <li class="mobile-menu__item">
                                 <a href="#" class="mobile-menu__link mobile-menu__link--active">Near me</a>
@@ -194,7 +194,7 @@
             <!-- End App Services -->
 
             <!-- Destination -->
-            <section class="destination">
+            <section class="destination" id="destination__link">
                 <!-- Destination Logo -->
                 <img class="destination__logo" src="./images/svgs/destination.svg" alt="Destination" />
                 <!-- End Destination Logo -->
@@ -216,7 +216,7 @@
             <!-- End Destination -->
 
             <!-- Newsletter -->
-            <section class="newsletter">
+            <section class="newsletter" id="newsletter__link">
                 <!-- Newsletter Content -->
                 <div class="newsletter__content">
                     <!-- Newsletter Title -->
@@ -273,9 +273,17 @@
     <!-- End Main -->
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" id="footer__link">
         <!-- Container -->
         <div class="container">
+            <!-- Scroll -->
+            <a href="#header" class="footer__scroll">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18.68" height="22.175" viewBox="0 0 18.68 22.175">
+                    <path id="Path_958" data-name="Path 958"
+                        d="M22.175,9.358a1.43,1.43,0,0,0-1.43-1.43H5.063l5.813-5.42A1.43,1.43,0,1,0,8.923.421L.455,8.311a1.43,1.43,0,0,0,0,2.091L8.923,18.3A1.43,1.43,0,1,0,10.875,16.2L5.063,10.788H20.746A1.43,1.43,0,0,0,22.175,9.358Z"
+                        transform="translate(18.68) rotate(90)" fill="#e76f51" />
+                </svg>
+            </a>
             <div class="footer__wrapper">
                 <div class="footer__wrapper-left">
                     <!-- Footer Content -->
@@ -367,6 +375,8 @@
                     <!-- End Footer Social Links -->
                 </div>
             </div>
+            <!-- Copy Right -->
+            <div class="footer__copy-right">© 2020. All rights reserved.</div>
         </div>
     </footer>
     <!-- End Footer -->
